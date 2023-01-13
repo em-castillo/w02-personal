@@ -1,0 +1,23 @@
+{
+  "contact": {
+    "firstName": "Nicole",
+    "lastName": "Oliva",
+    "email": "nicoleoliva@gmail.com",
+    "favoriteColor": "Yellow",
+    "birthday": "03/01/91"
+  },
+  "contact2": {
+    "firstName": "Heather",
+    "lastName": "Snyder",
+    "email": "heathers@gmail.com",
+    "favoriteColor": "Purple",
+    "birthday": "07/12/87"
+  },
+  "contact3": {
+    "firstName": "Rachel",
+    "lastName": "Romrell",
+    "email": "rachrom@gmail.com",
+    "favoriteColor": "Green",
+    "birthday": "08/17/92"
+  }
+}
