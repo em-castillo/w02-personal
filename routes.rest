@@ -1,10 +1,11 @@
-LOCALHOST LINKS
+// LOCALHOST
 GET http://localhost:8080/contacts 
+
 GET http://localhost:8080/contacts/63c1b52c4a0a407f459d7f52
 GET http://localhost:8080/contacts/63c1b52c4a0a407f459d7f53
 GET http://localhost:8080/contacts/63c1b52c4a0a407f459d7f54
 
-RENDER LINKS
+// RENDER LINKS
 https://lesson-02.onrender.com/contacts
 https://lesson-02.onrender.com/contacts/63c1b52c4a0a407f459d7f52
 https://lesson-02.onrender.com/contacts/63c1b52c4a0a407f459d7f53
