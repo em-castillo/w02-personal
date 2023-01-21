@@ -40,7 +40,7 @@ const createContact = async (req, res, next) => {
     res.status(201).json(result);
   }
   else {
-    res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+    res.status(500).json(result.error || 'Some error occurred while creating the contact.');
   }
 };
 

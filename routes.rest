@@ -1,5 +1,14 @@
 // LOCALHOST GET
-GET http://localhost:8080/contacts 
+PUT http://localhost:8080/contacts/63c1b52c4a0a407f459d7f54 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Rachel",
+    "lastName": "Romrell",
+    "email": "rachrom@gmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "08/17/92"
+  }
 
 GET http://localhost:8080/contacts/63c1b52c4a0a407f459d7f52
 GET http://localhost:8080/contacts/63c1b52c4a0a407f459d7f53
@@ -15,6 +24,7 @@ https://lesson-02.onrender.com/contacts/63c1b52c4a0a407f459d7f54
 // POST
 POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Danelle",
     "lastName": "Schmutz",
@@ -26,6 +36,7 @@ content-type: application/json
 // PUT
 PUT http://localhost:8080/contacts/63c1b52c4a0a407f459d7f54 HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Rachel",
     "lastName": "Romrell",
