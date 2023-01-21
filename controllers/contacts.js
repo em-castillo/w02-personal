@@ -39,9 +39,6 @@ const createContact = async (req, res, next) => {
     // and as a result, a resource has been created
     res.status(201).json(result);
   }
-  else {
-    res.status(500).json(result.error || 'Some error occurred while creating the contact.');
-  }
 };
 
 // PUT - updates a contact
