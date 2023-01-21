@@ -55,7 +55,8 @@ const updateContact = async (req, res, next) => {
   const result = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
   // modifiedCount - return field that checks for modifications
   if (result.modifiedCount > 0) {
-    res.status(200).send();
+    // 204 - There is no content to send for this request
+    res.status(204).send();
   }
 };
 
@@ -65,6 +66,7 @@ const deleteContact = async (req, res, next) => {
   const result = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
   // deleteCount - return field that checks for deleted data
   if (result.deleteCount > 0) {
+    // 200 - The request succeeded. The result meaning of "success" depends on the HTTP method
     res.status(200).send();
   }
 };
