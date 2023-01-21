@@ -39,7 +39,7 @@ content-type: application/json
 
 // DELETE
 ###
-DELETE http://localhost:8080/contacts/63cb9a737886268a0b6e2d9b HTTP/1.1
+DELETE http://localhost:8080/contacts/63cba2490af3a947c91280a5 HTTP/1.1
 
 
 // RENDER LINKS
@@ -65,10 +65,10 @@ content-type: application/json
     "firstName": "Rachel",
     "lastName": "Romrell",
     "email": "rachrom@gmail.com",
-    "favoriteColor": "Pink",
+    "favoriteColor": "Blue",
     "birthday": "08/17/92"
   }
 
 // DELETE (update id if another contact to delete was created
 ###
-DELETE https://lesson-02.onrender.com/contacts/63cb9a737886268a0b6e2d9b HTTP/1.1
+DELETE https://lesson-02.onrender.com/contacts/63cba2490af3a947c91280a5 HTTP/1.1
