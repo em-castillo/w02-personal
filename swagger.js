@@ -6,9 +6,9 @@ const doc = {
     title: 'My API contacts',
     description: 'contacts',
   },
-  // match port
-  host: 'localhost:8080',
-  schemes: ['http'],
+  // match port from render this time including https
+  host: 'lesson-02.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
