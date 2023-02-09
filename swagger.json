@@ -20,7 +20,7 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": "O K"
+            "description": "OK"
           }
         }
       },
