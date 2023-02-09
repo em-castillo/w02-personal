@@ -5,10 +5,10 @@
     "description": "contacts",
     "version": "1.0.0"
   },
-  "host": "lesson-02.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/contacts/": {
@@ -20,7 +20,7 @@
         "parameters": [],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "O K"
           }
         }
       },

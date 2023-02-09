@@ -50,7 +50,7 @@ const createContact = async (req, res, next) => {
     res.status(201).json(result);
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'Some error occurred. Contacts was not created.');
 }
 };
 
@@ -67,13 +67,14 @@ const updateContact = async (req, res, next) => {
   };
   // updateOne() is used to update a single entry matching a given specified filter
   const result = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
+  // handling errors
   // modifiedCount - return field that checks for modifications
   if (result.modifiedCount > 0) {
     // 204 - There is no content to send for this request
     res.status(204).send();
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'Some error occurred. Contact was not updated.');
 }
 };
 
@@ -82,13 +83,14 @@ const deleteContact = async (req, res, next) => {
   try{
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
+  // handling errors
   // deleteCount - return field that checks for deleted data
   if (result.deleteCount > 0) {
     // 200 - The request succeeded. The result meaning of "success" depends on the HTTP method
     res.status(200).send();
   }
 } catch (err){
-  res.status(500).json({message: err.message});
+  res.status(500).json({message: err.message} || 'Some error occurred. Contact was not deleted.');
 }
 };
 

@@ -72,3 +72,10 @@ content-type: application/json
 // DELETE (update id if another contact to delete was created
 ###
 DELETE https://lesson-02.onrender.com/contacts/63cba2490af3a947c91280a5 HTTP/1.1
+
+// SWAGGER LINK
+https://lesson-02.onrender.com/api-docs
+
+// swagger.json 
+// "host": "lesson-02.onrender.com",
+// "schemes": ["https"],
