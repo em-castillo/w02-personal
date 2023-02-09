@@ -30,7 +30,8 @@
     "mongodb": "^4.13.0",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
-    "swagger-ui-express": "^4.6.0"
+    "swagger-ui-express": "^4.6.0",
+    "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "swagger-autogen": "^2.22.0"
