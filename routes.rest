@@ -79,3 +79,6 @@ https://lesson-02.onrender.com/api-docs
 // swagger.json 
 // "host": "lesson-02.onrender.com",
 // "schemes": ["https"],
+
+//swagger link with handling errors and validation
+https://lesson-06.onrender.com/api-docs
