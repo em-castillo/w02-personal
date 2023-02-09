@@ -19,6 +19,10 @@ const getAll = async (req, res, next) => {
 // GET request returns a SINGLE document in contacts collection
 // where an ID matches the ID from a query parameter.
 const getSingle = async (req, res, next) => {
+// validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid contact id to find a contact.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').find({ _id: userId });
@@ -56,6 +60,10 @@ const createContact = async (req, res, next) => {
 
 // PUT - updates a contact
 const updateContact = async (req, res, next) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid contact id to update a contact.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const contact = {
@@ -80,6 +88,10 @@ const updateContact = async (req, res, next) => {
 
 // DELETE - delete a contact
 const deleteContact = async (req, res, next) => {
+  // validate id
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Use a valid contact id to delete a contact.');
+  }
   try{
   const userId = new ObjectId(req.params.id);
   const result = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
