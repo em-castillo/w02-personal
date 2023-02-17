@@ -97,7 +97,7 @@ const deleteContact = async (req, res, next) => {
   const result = await mongodb.getDb().db().collection('contacts').remove({ _id: userId }, true);
   // handling errors
   // deleteCount - return field that checks for deleted data
-  if (result.deleteCount > 0) {
+  if (result.deletedCount > 0) {
     // 200 - The request succeeded. The result meaning of "success" depends on the HTTP method
     res.status(200).send();
   }
